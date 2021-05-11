@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-11 15:08:27
- * @LastEditTime: 2021-05-11 15:36:26
+ * @LastEditTime: 2021-05-11 16:16:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume/src/App.tsx
@@ -18,6 +18,7 @@ function App() {
     <Layout className="layout">
       <Sider>
         <InputInfoArea />
+        <div>111</div>
       </Sider>
       <Content style={{ padding: "0 50px" }}>
         <div className="site-layout-content">Content</div>
