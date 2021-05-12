@@ -1,18 +1,20 @@
 /*
  * @Author: your name
  * @Date: 2021-05-11 15:08:27
- * @LastEditTime: 2021-05-11 15:30:13
- * @LastEditors: your name
+ * @LastEditTime: 2021-05-12 14:21:58
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume/src/index.tsx
  */
-import ReactDOM from "react-dom";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import dva from "dva";
+import { createBrowserHistory as createHistory } from 'history';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import "./index.css";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const app = dva({
+  history: createHistory(),
+});
+
+app.router(require("./router").default);
+
+app.start("#root");
