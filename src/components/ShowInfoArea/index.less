@@ -1,14 +1,44 @@
-.show-info-area-root {
-    display: flex;
-    padding: 3rem;
-    height: 100vh;
+#wrapper {
+    flex: 3 1;
 
-    .root-left {
-        width: 20vw;
-        color: white;
-        background-color: skyblue;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        color-adjust: exact;
+    .show-info-area-root {
+        display: flex;
+        padding: 24px;
+        width: 794px;
+        height: 1123px;
+
+        .root-left {
+            flex: 1 1;
+            color: white;
+            padding: 1rem 2rem;
+            background-color: rgb(39, 63, 117);
+            -webkit-print-color-adjust: exact;
+
+            .root-left-avatar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 2rem;
+            }
+        }
+
+
+        .root-right {
+            flex: 2 1;
+            background-color: #f2f2f2;
+        }
+
+    }
+}
+
+.print-button {
+    width: 12vw;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    & .ant-btn-primary {
+        margin-right: 1rem;
     }
 }

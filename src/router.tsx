@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-12 14:04:44
- * @LastEditTime: 2021-05-12 14:21:21
+ * @LastEditTime: 2021-05-12 17:48:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /CV/src/router.tsx
@@ -15,7 +15,7 @@ import {
   RouteComponentProps,
   RouteProps,
 } from "dva/router";
-import allRoutes from "./config/router";
+import { allRoutes } from "./config/router";
 
 interface RouteArrItem {
   path: string;
