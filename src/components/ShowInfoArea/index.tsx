@@ -24,8 +24,10 @@ function Index(props: any) {
               <Avatar />
             </div>
             <div className="self-info">
-              <div>{props.resume.basicInfo.name}</div>
-              <div>{props.resume.basicInfo.job}</div>
+              <div className="self-info-name">
+                {props.resume.basicInfo.name}
+              </div>
+              <div className="self-info-job">{props.resume.basicInfo.job}</div>
             </div>
           </div>
           <div className="root-right">right</div>
